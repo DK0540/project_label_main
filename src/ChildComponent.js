@@ -59,28 +59,28 @@ const ChildComponent = ({ htmlCode }) => {
     setShowForm(true);
   };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
+  // const handleFormSubmit = (e) => {
+  //   e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("message", message);
-    formData.append("image", imageDataUrl, "design.jpg");
+  //   const formData = new FormData();
+  //   formData.append("name", name);
+  //   formData.append("email", email);
+  //   formData.append("message", message);
+  //   formData.append("image", imageDataUrl, "design.jpg");
 
-    // Send the formData to the server or handle the submission as needed
-    // Example: axios.post("/send-email", formData);
+  //   // Send the formData to the server or handle the submission as needed
+  //   // Example: axios.post("/send-email", formData);
 
-    console.log("Form data:", formData);
+  //   console.log("Form data:", formData);
 
-    // Reset the form fields
-    setName("");
-    setEmail("");
-    setMessage("");
-    setImageDataUrl(null);
+  //   // Reset the form fields
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  //   setImageDataUrl(null);
 
-    setShowForm(false); // Close the form popup
-  };
+  //   setShowForm(false); // Close the form popup
+  // };
 
   const captureImage = () => {
     domtoimage
@@ -145,7 +145,7 @@ const ChildComponent = ({ htmlCode }) => {
       {showEditor && <div id="gjs"></div>}
       {showForm && (
         <div className="form-popup">
-          <form onSubmit={handleFormSubmit}>
+          <form>
             <h3 className="headtit">Send HTML Code for Review</h3>
             <label>Name:</label>
             <input
@@ -171,7 +171,12 @@ const ChildComponent = ({ htmlCode }) => {
                 <p>Text (HTML)</p>
               </div>
             )}
-            <button className="cbtnfive" type="submit">
+            <button
+              onClick={() => {
+                alert("Success alert (updating)");
+              }}
+              className="cbtnfive"
+            >
               Send
             </button>
             <button
