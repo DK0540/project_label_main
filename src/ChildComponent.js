@@ -149,12 +149,14 @@ const ChildComponent = ({ htmlCode }) => {
             <h3 className="headtit">Send HTML Code for Review</h3>
             <label>Name:</label>
             <input
+              className="ina"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <label>Email:</label>
             <input
+              className="inb"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -166,7 +168,6 @@ const ChildComponent = ({ htmlCode }) => {
             ></textarea>
             {imageDataUrl && (
               <div className="image-preview">
-                <h4>Design Preview:</h4>
                 <img src={imageDataUrl} alt="Design Preview" />
               </div>
             )}
