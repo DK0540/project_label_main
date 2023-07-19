@@ -168,7 +168,6 @@ const ChildComponent = ({ htmlCode }) => {
               <div className="image-preview">
                 <h4>Design Preview:</h4>
                 <img src={imageDataUrl} alt="Design Preview" />
-                <p>Text (HTML)</p>
               </div>
             )}
             <button
