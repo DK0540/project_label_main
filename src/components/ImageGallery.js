@@ -2,7 +2,7 @@ import React from "react";
 import image1 from "./images/bar2.jpg";
 import image2 from "./images/bar3.jpg";
 import image3 from "./images/bar4.png";
-import image4 from "./images/bar5.webp";
+import image4 from "./images/bar5.jpg";
 import image5 from "./images/bar6.png";
 import image6 from "./images/bar7.png";
 import "./ImageGallery.css";
@@ -15,6 +15,9 @@ const ImageGallery = () => {
 
   return (
     <>
+      <div className="work">
+        <h2>Our works</h2>
+      </div>
       <div className="imgback">
         <div style={galleryStyle}>
           {imageUrls.map((imageUrl, index) => (
@@ -71,9 +74,9 @@ export default ImageGallery;
 
 //   return (
 //     <>
-//       <div className="work">
-//         <h2>Our works</h2>
-//       </div>
+// <div className="work">
+//   <h2>Our works</h2>
+// </div>
 //       <div style={galleryStyle}>
 //         {imageUrls.map((imageUrl, index) => (
 //           <div key={index} style={imageContainerStyle}>

@@ -12,7 +12,7 @@ const HomePage = () => {
       <Header />
       <div className="container">
         <Link to="/app">
-          <button className="button">Click Me</button>
+          <button className="button">Create Your Label</button>
         </Link>
       </div>
       <ServicesPage />

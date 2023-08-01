@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="left-logo">
-        <h2>Label360</h2>
+        <h2>AAVI Labs</h2>
       </div>
       <nav className="right-nav">
         <ul>
