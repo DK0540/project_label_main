@@ -4,36 +4,7 @@
   text-align: center;
 }
 
-.header {
-  background-color: #f0f0f0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
 
-.left-logo img {
-  height: 50px; /* Adjust the height as needed */
-}
-
-.right-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-.right-nav li {
-  margin-left: 15px;
-}
-
-.right-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.right-nav a:hover {
-  color: #555;
-}
 
 
 .container {

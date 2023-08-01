@@ -40,6 +40,7 @@
   line-height: 20px;
   padding: 6px 16px;
   position: relative;
+  right: 550px;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -103,9 +104,10 @@
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
-  margin-left: 84px;
+  
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
+  right: 225px;
   text-decoration: none;
   transition: all 250ms;
   user-select: none;
@@ -157,6 +159,7 @@
   list-style: none;
   padding: 6px 16px;
   position: relative;
+  right: 555px;
   transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   user-select: none;
   -webkit-user-select: none;
