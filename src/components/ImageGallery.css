@@ -1,0 +1,28 @@
+.image-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 42x;
+  }
+
+
+  .gallery-item{
+    padding: 25px;
+  }
+
+
+  .work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .imgback{
+    padding-left: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 48px;
+    padding-top: 31px;
+    background: #e7e7e7;
+  }

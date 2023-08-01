@@ -1,0 +1,26 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #32dbc6;
+    color:#32dbc6;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  /* Add additional styles as per your design requirements */
+  

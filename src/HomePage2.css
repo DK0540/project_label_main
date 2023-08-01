@@ -1,0 +1,67 @@
+/* App.css */
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-logo img {
+  height: 50px; /* Adjust the height as needed */
+}
+
+.right-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.right-nav li {
+  margin-left: 15px;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.right-nav a:hover {
+  color: #555;
+}
+
+
+.container {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/269/226/428/hitman-barcode-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.homeb{
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+  height: 100vh;
+}
