@@ -5,18 +5,36 @@ import Footer from "./components/Footer";
 import ImageGallery from "./components/ImageGallery";
 import ServicesPage from "./components/ServicesPage";
 import Header from "./Header";
+import MyComponent from "./components/MyComponent";
+import About from "./components/About";
+
+import { Element } from "react-scroll";
 
 const HomePage = () => {
   return (
     <div className="homea">
       <Header />
-      <div className="container">
-        <Link to="/app">
-          <button className="button">Create Your Label</button>
-        </Link>
-      </div>
-      <ServicesPage />
-      <ImageGallery />
+      <Element name="home-page" className="element">
+        <div className="container">
+          <Link to="/app">
+            <button className="button">Create Your Label</button>
+          </Link>
+        </div>
+      </Element>
+
+      <Element name="our-service" className="element">
+        <ServicesPage />
+      </Element>
+      <Element name="our-work" className="element">
+        <ImageGallery />
+      </Element>
+      <Element name="about-us" className="element">
+        <About />
+      </Element>
+      <Element name="contact" className="element">
+        <MyComponent />
+      </Element>
+
       <Footer />
     </div>
   );

@@ -15,7 +15,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8f5f4;
+    background-color: #32dbc6;
+    margin-top: 73px;
+    padding-top: 9px;
   }
 
 
@@ -25,5 +27,10 @@
     margin-bottom: 0px;
     padding-bottom: 48px;
     padding-top: 31px;
-    background: #e7e7e7;
+    background:#32dbc6;
   }
+
+
+  /* .worktop{
+    margin-top: 100px;
+  } */

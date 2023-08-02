@@ -1,0 +1,60 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .about-form-head {
+    text-align: left;
+    font-size: 35px;
+  }
+  .leftDiv {
+    max-width: 400px;
+    max-height: 400px;
+    margin-right: 20px;
+    margin-top: 73px;
+  }
+  
+  .rightDiv {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  .rightDiv img{
+    max-width: 500px;
+    height: 400px;
+    border-radius: 20px;
+  }
+
+  .small-about-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .small-leftDiv {
+    
+    margin-right: 20px;
+  }
+
+  .small-leftDiv img{
+  width: 50px;
+    height: 50px;
+  }
+
+  .small-rightDiv img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .small-rightDiv {
+    margin-left: 20px;
+  }
+
+  
+.small-a {
+    text-decoration: none;
+    color: aqua;
+  }
+  
+  
+
+  

@@ -75,25 +75,26 @@ const Main = () => {
 
   return (
     <div className="App">
-      <header className="mheader">
-        <nav className="mmain"></nav>
-        <Link to="/">
-          <button className="mback">Back</button>
-        </Link>
-        {!isEditing && (
-          <button className="medit" onClick={handleEdit}>
-            Edit
+      <div className="edithead">
+        <div className="editbtns">
+          <Link to="/">
+            <button className="mback">Back</button>
+          </Link>
+          {!isEditing && (
+            <button className="medit" onClick={handleEdit}>
+              Edit
+            </button>
+          )}
+          {isEditing && (
+            <button className="msave" onClick={handleSave}>
+              Save
+            </button>
+          )}
+          <button className="mdownload" onClick={handleDownload}>
+            Download
           </button>
-        )}
-        {isEditing && (
-          <button className="msave" onClick={handleSave}>
-            Save
-          </button>
-        )}
-        <button className="mdownload" onClick={handleDownload}>
-          Download
-        </button>
-      </header>
+        </div>
+      </div>
       <div ref={editorRef} id="gjs"></div>
       {showPopup && <Popup onClose={handleClosePopup} />}
       {htmlCode && (

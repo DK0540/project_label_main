@@ -6,6 +6,7 @@ import { ImBarcode } from "react-icons/im";
 import { TbMoodShare } from "react-icons/tb";
 import { MdPriceChange } from "react-icons/md";
 import "./service.css";
+import { Link } from "react-scroll";
 
 const servicesData = [
   {
@@ -60,23 +61,23 @@ const servicesData = [
 
 const ServicesPage = () => {
   return (
-    <div className="services-page">
-      <h1>Our Services</h1>
-      <div className="services-container">
-        {servicesData.map((service) => (
-          <div key={service.id} className="service-item">
-            {service.icon}
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <p>
-              <a href={service.link} className="learn-more">
-                Learn More
-              </a>
-            </p>
+    <>
+      <Link to="our-service" smooth={true} duration={500}>
+        <div className="services-page">
+          <h1>Our Services</h1>
+          <div className="services-container">
+            {servicesData.map((service) => (
+              <div key={service.id} className="service-item">
+                {service.icon}
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <p className="learn-more">Learn more</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      </Link>
+    </>
   );
 };
 

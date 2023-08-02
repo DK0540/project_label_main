@@ -53,4 +53,10 @@
     font-size: 30px;
   }
 
- 
+ .footimg{
+  width: 187px;
+  height: 62px;
+  object-fit: cover;
+  object-position: 25% 50%;
+  margin-left: -18px;
+ }

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #cce7ed6d;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .app-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+      margin-bottom: 50px;
+  }
+  
+  .contact-form-head {
+    font-size: 20px;
+  }
+  
+  .myForm1 {
+    background: white;
+    max-width: 600px;
+    /* width: 500px; */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  .full-input {
+    width: 90%;
+  }
+  
+  textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #19f1bf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col {
+    width: 100%;
+    flex: 1;
+  }
+  
+  /*  CSS code to center the form */
+
+  
+  .contact-form-head {
+    text-align: left;
+  }
+  
+  .myForm2{
+    background: white;
+    max-width: 350px;
+    max-height: 280px;
+    margin: 0 20px; 
+    padding: 20px;
+    
+  }
+  
+  /* Add your custom styles below */
+#contact-phone,
+#contact-email{
+    color:aqua ;
+}
+
+
+.cnthead{
+  display: inline-block;
+    margin-top: 100px;
+    margin-left: 600px;
+}

@@ -6,6 +6,7 @@ import image4 from "./images/bar5.jpg";
 import image5 from "./images/bar6.png";
 import image6 from "./images/bar7.png";
 import "./ImageGallery.css";
+import { Link } from "react-scroll";
 
 const ImageGallery = () => {
   // Replace these URLs with the actual image URLs you want to showcase
@@ -15,22 +16,26 @@ const ImageGallery = () => {
 
   return (
     <>
-      <div className="work">
-        <h2>Our works</h2>
-      </div>
-      <div className="imgback">
-        <div style={galleryStyle}>
-          {imageUrls.map((imageUrl, index) => (
-            <div key={index} style={imageContainerStyle}>
-              <img
-                src={imageUrl}
-                alt={`Image ${index + 1}`}
-                style={imageStyle}
-              />
+      <Link to="our-work" smooth={true} duration={500}>
+        <div className="worktop">
+          <div className="imgback">
+            <div className="work">
+              <h2>Our works</h2>
             </div>
-          ))}
+            <div style={galleryStyle}>
+              {imageUrls.map((imageUrl, index) => (
+                <div key={index} style={imageContainerStyle}>
+                  <img
+                    src={imageUrl}
+                    alt={`Image ${index + 1}`}
+                    style={imageStyle}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };
