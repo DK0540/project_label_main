@@ -34,6 +34,11 @@ function Header() {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500}>
+              Pricing
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
